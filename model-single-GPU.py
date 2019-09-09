@@ -728,7 +728,7 @@ def main(args):
                     valid_errs = np.array(probs)
                     valid_err_cost = valid_errs.mean()
                     os.system(
-                        'python3.4 compute-wer.py ' + args.path + '/result/valid_decode_result-bs-6.txt' + ' ' + args.path + '/data/test_caption.txt' + ' ' + args.path + '/result/valid-bs-6.wer')
+                        'python compute-wer.py ' + args.path + '/result/valid_decode_result-bs-6.txt' + ' ' + args.path + '/data/test_caption.txt' + ' ' + args.path + '/result/valid-bs-6.wer')
                     fpp = open(args.path + '/result/valid-bs-6.wer')
                     stuff = fpp.readlines()
                     fpp.close()
